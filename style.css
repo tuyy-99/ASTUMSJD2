@@ -80,7 +80,6 @@ h1 {
 
 .task-list {
   text-align: center;
-
 }
 
 .task-item {
@@ -148,17 +147,45 @@ h2 {
   margin-top: 15px;
 }
 
-@media (max-width: 600x) {
-  .insidebox {
-    width: 120vw;
-    padding: 25px 15px;
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 15px;
   }
-
-.taskinput {
-    width: 50%;
+  .input {
+    flex-direction: column;
+    gap: 10px;
   }
-
-.title {
-    font-size: 1.5rem;
+  .input input {
+    width: 100%;
+    padding: 8px;
+  }
+  #add-btn {
+    width: 100%;
+    padding: 8px;
+    font-size: 1em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  .task-item {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px;
+  }
+  .task-item input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .icons {
+    justify-content: center;
+    gap: 5px;
+  }
+  .icon-btn {
+    width: 20px;
+    height: 20px;
+  }
+  h2 {
+    font-size: 0.8em;
   }
 }
