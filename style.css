@@ -146,45 +146,60 @@ h2 {
   color: #666;
   margin-top: 15px;
 }
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container {
-    width: 90%;
-    padding: 15px;
+    padding: 20px;
   }
+
+  .another-container {
+    padding: 30px 20px;
+    margin: 40px auto;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
   .input {
     flex-direction: column;
-    gap: 10px;
+    align-items: stretch;
   }
+
   .input input {
     width: 100%;
-    padding: 8px;
   }
-  #add-btn {
-    width: 100%;
-    padding: 8px;
-    font-size: 1em;
-  }
-  h1 {
-    font-size: 1.5em;
-  }
+
   .task-item {
     flex-direction: column;
-    align-items: stretch;
-    padding: 8px;
+    align-items: flex-start;
   }
-  .task-item input {
-    width: 100%;
-    margin-bottom: 5px;
-  }
+
   .icons {
-    justify-content: center;
-    gap: 5px;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
   }
-  .icon-btn {
-    width: 20px;
-    height: 20px;
+}
+
+@media (min-width: 480px) {
+  .container {
+    padding: 15px;
   }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .icon-add {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .input input {
+    font-size: 0.9em;
+  }
+
   h2 {
     font-size: 0.8em;
   }
